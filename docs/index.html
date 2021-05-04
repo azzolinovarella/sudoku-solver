@@ -11,8 +11,8 @@
 		<!-- Não remover tag abaixo! Usada para verificação do Google -->
 		<meta name="google-site-verification" content="yvNj0FkQY2HJK76FxUgI8k9P6o-QHYaIMKpYPOyy_bw"	/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Este projeteto foi desenvolvido durante a matéria
-		Inteligência Artificial na UFABC">>
+		<meta name="description" content="Este projeto tem como objetivo resolver problemas 9x9 de 
+		Sudoku." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="sortcut icon" href="images/icons/ai.ico" type="image/x-icon" />
 	</head>
@@ -71,10 +71,55 @@
 					<section id="three">
 						<a id="explicacao-geral-do-projeto"><h3>Explicação Geral do Projeto</h3></a>
 						<h4>
-							<p>###</p>
-
-							<p>Informações detalhadas sobre cada módulo bem como instruções de execução, 
-							podem ser encontradas no README do projeto:<br><br>
+							<p>
+								Em suma, o objetivo deste projeto é resolver problemas 9x9 do jogo
+							    Sudoku. A partir da passagem do algoritmo de busca desejado (que 
+							    pode ser BFS, DFS, A*, AC3 ou Backtracking) e de uma arquivo de texto 
+							    contendo um problema por linha, representados por uma String com 81 
+							    caracteres  (onde os 9 primeiros representam a primeira linha, os 9  
+							    seguintes a segunda, e assim por diante) ou a partir da passagem do 
+							    problema via input (requisitado no terminal quando executado o módulo 
+							    main), este programa busca encontrar a solução para cada problema, 
+							    imprimindo ao final a String de solução bem como o problema em um grid 
+							    de Sudoku. 
+							</p><p>
+							    A String que representa o problema deve conter um ponto (".") nas casas 
+							    onde o valor é desconhecido, conter exatamente 81 caracteres e possuir 
+							    uma única solução possível. Desta forma, um exemplo válido de String 
+							    seria:<pre><h5 style="text-align: center; white-space: normal">
+									<code>.......2143.......6........2.15..........637...........68...4.....23........7....</code>
+								</h5></pre>
+							    Interpretada como:<pre><h5 style="text-align: center; white-space: normal">
+									<code>|. . .|. . .|. 2 1|
+									  	  |4 3 .|. . .|. . .|
+									      |6 . .|. . .|. . .|
+									      |-----+-----+-----|
+									      |2 . 1|5 . .|. . .|
+									      |. . .|. . 6|3 7 .|
+									      |. . .|. . .|. . .|
+									      |-----+-----+-----|
+									      |. 6 8|. . .|4 . .|
+									      |. . .|2 3 .|. . .|
+									      |. . .|. 7 .|. . .|</code>
+										</h5></pre>
+							    Tendo como solução:<pre><h5 style="text-align: center; white-space: normal">
+									<code>|8 5 7|3 4 9|6 2 1|
+										  |4 3 2|8 6 1|5 9 7|
+										  |6 1 9|7 5 2|8 4 3|
+										  |-----+-----+-----|
+										  |2 7 1|5 8 3|9 6 4|
+										  |9 4 5|1 2 6|3 7 8|
+										  |3 8 6|4 9 7|2 1 5|
+										  |-----+-----+-----|
+									  	  |7 6 8|9 1 5|4 3 2|
+									  	  |1 9 4|2 3 8|7 5 6|
+									  	  |5 2 3|6 7 4|1 8 9|</code>
+								</h5></pre>
+							    Que representada por uma String seria:
+							    <pre><h5 style="text-align: center; white-space: normal">
+									<code>857349621432861597619752843271583964945126378386497215768915432194238756523674189</code></h5></pre>
+							</p><p>
+								Instruções de execução podem ser encontradas no README do projeto:
 							<a href="https://github.com/azzolinovarella/sudoku-solver/blob/master/README.md">
 							<h4 style="text-align: center;">https://github.com/azzolinovarella/sudoku-solver/blob/master/README.md</h4></a>							
 							</p>

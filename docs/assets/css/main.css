@@ -229,6 +229,7 @@ input, select, textarea {
 			line-height: 1.75em;
 			padding: 1em 1.5em;
 			overflow-x: auto;
+			white-space: pre-line;
 		}
 
 	.align-left {
